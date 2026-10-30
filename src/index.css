@@ -1,0 +1,6 @@
+:root { font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif; color: #293b32; background: #f7f8f2; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; }
+button:focus-visible, a:focus-visible { outline: 3px solid #b37635; outline-offset: 5px; }

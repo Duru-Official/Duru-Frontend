@@ -1,0 +1,25 @@
+.shell { max-width: 1120px; margin: 0 auto; padding: 32px 40px; }
+header { display: flex; align-items: center; justify-content: space-between; }
+.brand { font-size: 34px; font-weight: 800; letter-spacing: -2px; text-decoration: none; color: #315640; }
+.brand span { display: inline-block; margin-left: 5px; color: #9ab288; font-size: 25px; }
+.badge { font-size: 12px; background: #e8eddf; padding: 8px 14px; border-radius: 24px; }
+.intro { padding: 68px 0 42px; }
+.eyebrow { font-size: 11px; letter-spacing: 3px; font-weight: 700; color: #65785e; }
+h1 { font-size: clamp(40px, 5.5vw, 64px); line-height: 1.25; letter-spacing: -3px; margin: 20px 0; font-weight: 700; }
+.description { font-size: 15px; line-height: 1.9; color: #657068; }
+.features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+article { border: 1px solid #dce2d4; border-radius: 16px; padding: 25px; background: #fffef9; }
+.number { font-size: 12px; color: #6d8061; }
+h2 { font-size: 19px; margin: 18px 0 10px; letter-spacing: -.5px; }
+article p { color: #68746a; font-size: 14px; line-height: 1.8; margin-bottom: 24px; }
+.soon { font-size: 11px; color: #64725d; background: #edf1e6; border-radius: 5px; padding: 5px 8px; }
+.connection { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 25px 0; margin-top: 22px; border-bottom: 1px solid #dce2d4; }
+.connection h2 { font-size: 14px; margin: 0 0 8px; }
+.connection p { font-size: 13px; color: #667269; margin: 0; line-height: 1.7; }
+.connection .connected { color: #2d693d; }
+.connection .error { color: #a14534; }
+button { cursor: pointer; border: 0; padding: 13px 19px; border-radius: 9px; color: #fff; background: #315640; font-size: 13px; white-space: nowrap; }
+button:hover { background: #244632; }
+button:disabled { opacity: .6; cursor: wait; }
+footer { margin-top: 22px; font-size: 11px; color: #788174; }
+@media (max-width: 650px) { .shell { padding: 24px; } .intro { padding-top: 45px; } .features { grid-template-columns: 1fr; } article { padding: 22px; } .connection { align-items: flex-start; flex-direction: column; gap: 16px; } }
