@@ -5,19 +5,15 @@
 
 ## 적용 상태
 
-2026-10-30 확인 기준입니다.
-
-| 항목 | 상태 |
+| 항목 | 운영 기준 및 확인 위치 |
 | --- | --- |
-| GitHub 저장소 | [Duru-Official/Duru-Frontend](https://github.com/Duru-Official/Duru-Frontend), 공개·최초 업로드 전 |
-| 로컬 브랜치 | main에서 dev 분기, 문서·설정 변경은 docs/repository-guidelines에서 검토 중 |
-| 원격 dev·main | 아직 없음. 최초 업로드에서 생성 |
-| 기본 브랜치 | 원격 dev 생성 후 dev로 지정 필요 |
+| GitHub 저장소 | [Duru-Official/Duru-Frontend](https://github.com/Duru-Official/Duru-Frontend), 공개 |
+| 기본 브랜치 | `dev`에서 작업 브랜치를 분기하고 PR로 통합 |
+| 릴리스 브랜치 | `main`에 릴리스 PR로 반영. [원격 브랜치 목록](https://github.com/Duru-Official/Duru-Frontend/branches) |
 | Ruleset | [protect-dev-and-main](https://github.com/Duru-Official/Duru-Frontend/settings/rules/26193994), Active 저장 완료 |
-| CI | 워크플로 정의와 로컬 검사 완료. GitHub Actions 실제 실행은 최초 업로드 후 확인 |
+| CI | [GitHub Actions 실행 이력](https://github.com/Duru-Official/Duru-Frontend/actions/workflows/ci.yml)에서 브랜치와 커밋별 결과 확인 |
+| 코드 리뷰 | PR을 열 때 Codex 자동 리뷰. 프로젝트별 기준은 [AGENTS.md](../AGENTS.md#code-review-rules) 참고 |
 | 배포 | 서버·환경·배포 자동화 미연결 |
-
-원격 브랜치가 없어 Ruleset 화면의 적용 대상 수는 0입니다. dev·main이 생성되면 이름에 따라 규칙이 적용됩니다.
 
 ## 보호 정책
 
@@ -64,7 +60,7 @@ Actions는 커밋 SHA에 고정하고 저장소 권한은 읽기로 제한합니
 
 ## 최초 업로드 순서
 
-아래는 아직 실행하지 않은 도입 절차입니다. 최초 기반을 만드는 단계와 이후 PR 운영을 구분합니다.
+빈 저장소에 최초 기반을 만들 때의 절차입니다. 이후 변경은 작업 브랜치와 PR을 사용합니다.
 
 1. 로컬 변경·비밀값 제외·검사 결과를 검토하고 기반 정비 커밋을 확정합니다.
 2. 이 저장소의 origin을 연결하고 작업 브랜치의 커밋을 먼저 업로드합니다.
