@@ -1,0 +1,39 @@
+---
+name: 릴리스 준비
+description: dev → main 승격 범위와 배포·복구 점검
+title: "[Release] v"
+body:
+- type: input
+  id: version
+  attributes:
+    label: 목표 버전
+  validations:
+    required: true
+- type: textarea
+  id: changes
+  attributes:
+    label: 포함할 변경
+    description: 포함 PR, 완료 조건, 제외할 작업
+  validations:
+    required: true
+- type: textarea
+  id: compatibility
+  attributes:
+    label: 호환성과 의존성
+    description: 프론트·백엔드 조합, DB·설정 변경, 반영 순서. 없으면 해당 없음.
+  validations:
+    required: true
+- type: textarea
+  id: checks
+  attributes:
+    label: 릴리스 검증
+    description: 필수 검사·핵심 사용자 흐름·실패 경로
+  validations:
+    required: true
+- type: textarea
+  id: rollout
+  attributes:
+    label: 배포와 복구 계획
+    description: 배포 여부, 적용 후 확인, 이전 버전, DB 가역성과 백업. 코드 릴리스만 하면 명시하세요.
+  validations:
+    required: true
